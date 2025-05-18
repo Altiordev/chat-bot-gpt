@@ -30,11 +30,6 @@ export class TelegramUpdate {
     );
   }
 
-  // @On('message:voice')
-  // async onVoiceMessage(ctx: Context): Promise<void> {
-  // 	return this.telegramService.processVoiceMessage(ctx)
-  // }
-
   @On("message:text")
   async onTextMessage(ctx: Context): Promise<void> {
     // Skip processing for /start command
